@@ -4,14 +4,12 @@ run:
   tests: false
 
 output:
-  format: tab
+   formats: 
+    - format: tab
 
 linters-settings:
   exhaustive:
     default-signifies-exhaustive: true
-
-  govet:
-    check-shadowing: false
     
 linters:
   enable:
@@ -27,7 +25,6 @@ linters:
     - bidichk
     - durationcheck
     - exhaustive
-    - exportloopref
     - gofmt
     - goimports
     - misspell
